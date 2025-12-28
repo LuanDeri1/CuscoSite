@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cusco, Peru | Ancient Wonders & Modern Adventures</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="moving-bg" aria-hidden="true">
+    <span class="bg-slide slide-1"></span>
+    <span class="bg-slide slide-2"></span>
+    <span class="bg-slide slide-3"></span>
+    <span class="bg-slide slide-4"></span>
+  </div>
+
+  <header class="site-header">
+    <div class="logo">Inti<span>Qori</span></div>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About Cusco</a>
+      <a href="attractions.html">Attractions</a>
+      <a href="tours.html">Tours</a>
+      <a href="events.html">Events</a>
+      <a href="blog.html">Blog</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="header-actions">
+      <span class="greeting" id="greeting" hidden>Welcome, Traveler</span>
+      <button class="ghost-button" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="primary-button" id="signInTrigger">Sign In</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">Cusco, Peru</p>
+        <h1>Explore the Ancient Wonders of Cusco</h1>
+        <p>
+          Walk through living history with immersive tours, curated cultural experiences, and
+          unforgettable Andean landscapes.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-button" href="tours.html">Book Your Adventure</a>
+          <a class="ghost-button" href="#attractions">Discover Attractions</a>
+        </div>
+        <div class="personalized" id="personalizedContent" hidden>
+          <h3>Hola, <span id="userName">Traveler</span>!</h3>
+          <p>Recommended for you: Sacred Valley sunrise trek, Inti Raymi VIP seats, and artisan market tours.</p>
+        </div>
+      </div>
+      <div class="hero-media">
+        <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1509475826633-fed577a2c71b?q=80&w=1200&auto=format&fit=crop" aria-label="Cusco landscape video">
+          <source src="https://cdn.coverr.co/videos/coverr-mountain-range-6991/1080p.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+
+    <section class="section" id="attractions">
+      <div class="section-heading">
+        <h2>Iconic Attractions</h2>
+        <p>Hover to explore the legends behind Cusco's most celebrated sites.</p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop" alt="Machu Picchu" loading="lazy" />
+          <div class="card-content">
+            <h3>Machu Picchu</h3>
+            <p>Cloud-kissed citadel with sunrise ceremonies and expert-guided hikes.</p>
+            <div class="card-actions">
+              <a href="attractions.html#machu-picchu">More Info</a>
+              <a href="tours.html">Book Tour</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop" alt="Sacsayhuamán" loading="lazy" />
+          <div class="card-content">
+            <h3>Sacsayhuamán</h3>
+            <p>Massive Inca fortress stones with panoramic views of Cusco.</p>
+            <div class="card-actions">
+              <a href="attractions.html#sacsayhuaman">More Info</a>
+              <a href="tours.html">Book Tour</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop" alt="Qorikancha" loading="lazy" />
+          <div class="card-content">
+            <h3>Qorikancha</h3>
+            <p>Temple of the Sun blending Inca stonework and colonial architecture.</p>
+            <div class="card-actions">
+              <a href="attractions.html#qorikancha">More Info</a>
+              <a href="tours.html">Book Tour</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Pisac Market" loading="lazy" />
+          <div class="card-content">
+            <h3>Pisac Market</h3>
+            <p>Colorful textiles, artisan crafts, and the heart of Andean culture.</p>
+            <div class="card-actions">
+              <a href="attractions.html#pisac">More Info</a>
+              <a href="tours.html">Book Tour</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Inca Trail" loading="lazy" />
+          <div class="card-content">
+            <h3>Inca Trail</h3>
+            <p>Multi-day trek through cloud forests to the Sun Gate.</p>
+            <div class="card-actions">
+              <a href="attractions.html#inca-trail">More Info</a>
+              <a href="tours.html">Book Tour</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="tours">
+      <div class="section-heading">
+        <h2>Tour Packages & Booking</h2>
+        <p>Filter by your travel style and book your perfect Cusco experience.</p>
+      </div>
+      <div class="filters">
+        <button class="filter-button active" data-filter="all">All</button>
+        <button class="filter-button" data-filter="historical">Historical</button>
+        <button class="filter-button" data-filter="adventure">Adventure</button>
+        <button class="filter-button" data-filter="cultural">Cultural</button>
+      </div>
+      <div class="card-grid" id="tourGrid">
+        <article class="card tour-card" data-type="historical">
+          <div class="tour-price">$180</div>
+          <h3>Machu Picchu Day Tour</h3>
+          <p>Guided sunrise visit with gourmet picnic and panoramic train ride.</p>
+          <button class="primary-button">Book Now</button>
+        </article>
+        <article class="card tour-card" data-type="cultural">
+          <div class="tour-price">$95</div>
+          <h3>Cusco City & Qorikancha</h3>
+          <p>Half-day immersion in colonial plazas, temples, and artisan markets.</p>
+          <button class="primary-button">Book Now</button>
+        </article>
+        <article class="card tour-card" data-type="adventure">
+          <div class="tour-price">$420</div>
+          <h3>Inca Trail Hike</h3>
+          <p>4-day trek with premium camping, chefs, and bilingual guides.</p>
+          <button class="primary-button">Book Now</button>
+        </article>
+        <article class="card tour-card" data-type="historical">
+          <div class="tour-price">$160</div>
+          <h3>Sacred Valley Explorer</h3>
+          <p>Ollantaytambo, Pisac ruins, and a private chicha tasting.</p>
+          <button class="primary-button">Book Now</button>
+        </article>
+      </div>
+      <div class="booking-tools">
+        <div>
+          <label for="datePicker">Available Dates</label>
+          <input type="date" id="datePicker" />
+        </div>
+        <div>
+          <label for="tourType">Tour Type</label>
+          <select id="tourType">
+            <option>Private</option>
+            <option>Group</option>
+          </select>
+        </div>
+        <div>
+          <label for="duration">Duration</label>
+          <select id="duration">
+            <option>Half-day</option>
+            <option>Full-day</option>
+            <option>Multi-day</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="events">
+      <div class="section-heading">
+        <h2>Upcoming Events & Festivals</h2>
+        <p>Select a date to see details, tickets, and insider tips.</p>
+      </div>
+      <div class="calendar" id="eventCalendar">
+        <button data-event="inti-raymi">June 24 · Inti Raymi</button>
+        <button data-event="carnival">February · Cusco Carnival</button>
+        <button data-event="gastronomy">September · Gastronomy Week</button>
+        <button data-event="music">August · Andes Music Nights</button>
+      </div>
+      <div class="event-details" id="eventDetails">
+        <h3>Choose an event</h3>
+        <p>Click on the calendar to reveal festival highlights and ticket options.</p>
+      </div>
+    </section>
+
+    <section class="section" id="blog">
+      <div class="section-heading">
+        <h2>Travel Guides & Cusco Tips</h2>
+        <p>Stories, food guides, and cultural insights from local experts.</p>
+      </div>
+      <div class="card-grid">
+        <article class="card blog-card">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop" alt="Peruvian dishes" loading="lazy" />
+          <div class="card-content">
+            <h3>Best Peruvian Dishes You Must Try in Cusco</h3>
+            <p>From rocoto relleno to quinoa soups, taste the Andes.</p>
+            <div class="social-share">
+              <button aria-label="Share on Facebook">Facebook</button>
+              <button aria-label="Share on Instagram">Instagram</button>
+              <button aria-label="Share on Twitter">Twitter</button>
+            </div>
+          </div>
+        </article>
+        <article class="card blog-card">
+          <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=1200&auto=format&fit=crop" alt="Cusco city" loading="lazy" />
+          <div class="card-content">
+            <h3>Top 10 Things to Do in Cusco</h3>
+            <p>Balance culture, adventure, and nightlife with our curated list.</p>
+            <div class="social-share">
+              <button aria-label="Share on Facebook">Facebook</button>
+              <button aria-label="Share on Instagram">Instagram</button>
+              <button aria-label="Share on Twitter">Twitter</button>
+            </div>
+          </div>
+        </article>
+        <article class="card blog-card">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Inca culture" loading="lazy" />
+          <div class="card-content">
+            <h3>A Guide to Inca Culture</h3>
+            <p>Discover rituals, textile symbolism, and Andean traditions.</p>
+            <div class="social-share">
+              <button aria-label="Share on Facebook">Facebook</button>
+              <button aria-label="Share on Instagram">Instagram</button>
+              <button aria-label="Share on Twitter">Twitter</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="testimonials">
+      <div class="section-heading">
+        <h2>Traveler Testimonials</h2>
+        <p>Real stories from explorers who fell in love with Cusco.</p>
+      </div>
+      <div class="testimonial-slider" id="testimonialSlider">
+        <article class="testimonial active">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=600&auto=format&fit=crop" alt="Traveler Maria" loading="lazy" />
+          <blockquote>“Our guide made history come alive. We felt the spirit of the Andes at every stop.”</blockquote>
+          <h4>Maria & Family · Lima</h4>
+        </article>
+        <article class="testimonial">
+          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=600&auto=format&fit=crop" alt="Traveler John" loading="lazy" />
+          <blockquote>“The personalized adventure plan was flawless. Sunrise at Machu Picchu was unforgettable.”</blockquote>
+          <h4>John & Aisha · Toronto</h4>
+        </article>
+        <article class="testimonial">
+          <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=600&auto=format&fit=crop" alt="Traveler Aya" loading="lazy" />
+          <blockquote>“From the food tour to the sacred valley, every detail felt premium and authentic.”</blockquote>
+          <h4>Aya · Tokyo</h4>
+        </article>
+      </div>
+      <div class="slider-controls">
+        <button class="ghost-button" id="prevTestimonial">Prev</button>
+        <button class="ghost-button" id="nextTestimonial">Next</button>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-heading">
+        <h2>Contact Us</h2>
+        <p>Let us craft your custom Cusco journey.</p>
+      </div>
+      <div class="contact-grid">
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" />
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="hello@email.com" />
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="+51 999 999 999" />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us your dream trip"></textarea>
+          <button type="submit" class="primary-button">Send Inquiry</button>
+        </form>
+        <div class="map-card">
+          <h3>Visit Our Cusco Studio</h3>
+          <p>Av. El Sol 123, Cusco, Peru</p>
+          <iframe
+            title="Cusco Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.8636198183296!2d-71.97818192427673!3d-13.516099786843926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd60ddc0d8d15%3A0x94f9a8b3f2b4a1a2!2sCusco%2C%20Peru!5e0!3m2!1sen!2sus!4v1697043641369!5m2!1sen!2sus"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About Us</a>
+      <a href="events.html">Events</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+      <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+      <a href="https://twitter.com" target="_blank" rel="noreferrer">Twitter</a>
+    </div>
+    <form class="newsletter">
+      <label for="newsletterEmail">Newsletter</label>
+      <input id="newsletterEmail" type="email" placeholder="Email address" />
+      <button type="submit" class="primary-button">Subscribe</button>
+    </form>
+  </footer>
+
+  <div class="modal" id="authModal" aria-hidden="true" role="dialog" aria-labelledby="authTitle">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal">✕</button>
+      <h2 id="authTitle">Welcome Back</h2>
+      <p>Sign in to unlock personalized tours and curated events.</p>
+      <form id="authForm">
+        <label for="authName">Name</label>
+        <input id="authName" type="text" placeholder="Traveler name" required />
+        <label for="authEmail">Email</label>
+        <input id="authEmail" type="email" placeholder="you@email.com" required />
+        <label for="authPassword">Password</label>
+        <input id="authPassword" type="password" placeholder="•••••••" required />
+        <button type="submit" class="primary-button">Sign In</button>
+      </form>
+      <div class="social-logins">
+        <button class="ghost-button">Continue with Google</button>
+        <button class="ghost-button">Continue with Facebook</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
