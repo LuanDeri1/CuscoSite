@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Cusco | IntiQori</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="moving-bg" aria-hidden="true">
+    <span class="bg-slide slide-1"></span>
+    <span class="bg-slide slide-2"></span>
+    <span class="bg-slide slide-3"></span>
+    <span class="bg-slide slide-4"></span>
+  </div>
+  <header class="site-header">
+    <div class="logo">Inti<span>Qori</span></div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About Cusco</a>
+      <a href="attractions.html">Attractions</a>
+      <a href="tours.html">Tours</a>
+      <a href="events.html">Events</a>
+      <a href="blog.html">Blog</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="header-actions">
+      <span class="greeting" id="greeting" hidden>Welcome, Traveler</span>
+      <button class="ghost-button" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="primary-button" id="signInTrigger">Sign In</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>About Cusco</h1>
+      <p>The ancient capital of the Inca empire, where living history meets vibrant modern life.</p>
+    </section>
+
+    <section class="section">
+      <div class="two-column">
+        <div>
+          <h2>Heritage & Culture</h2>
+          <p>
+            Cusco blends Inca stonework, Spanish colonial architecture, and bustling modern energy.
+            From ritual festivals to artisan workshops, the city celebrates its roots every day.
+          </p>
+          <ul class="checklist">
+            <li>UNESCO World Heritage Site</li>
+            <li>Gateway to Machu Picchu</li>
+            <li>Epicenter of Andean traditions</li>
+          </ul>
+        </div>
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1400&auto=format&fit=crop" alt="Cusco rooftops" loading="lazy" />
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2>Why Visit Cusco?</h2>
+        <p>Balance adventure, history, and gastronomy in one unforgettable destination.</p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Ancient Ruins</h3>
+          <p>Explore fortified temples, sun shrines, and astronomical sites.</p>
+        </article>
+        <article class="card">
+          <h3>Vibrant Markets</h3>
+          <p>Shop handwoven alpaca textiles, ceramics, and organic cacao.</p>
+        </article>
+        <article class="card">
+          <h3>Andean Cuisine</h3>
+          <p>Savor local flavors like chiriuchu, quinoa soups, and Pisco sours.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About Us</a>
+      <a href="events.html">Events</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+      <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+      <a href="https://twitter.com" target="_blank" rel="noreferrer">Twitter</a>
+    </div>
+    <form class="newsletter">
+      <label for="newsletterEmail">Newsletter</label>
+      <input id="newsletterEmail" type="email" placeholder="Email address" />
+      <button type="submit" class="primary-button">Subscribe</button>
+    </form>
+  </footer>
+
+  <div class="modal" id="authModal" aria-hidden="true" role="dialog" aria-labelledby="authTitle">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal">✕</button>
+      <h2 id="authTitle">Welcome Back</h2>
+      <p>Sign in to unlock personalized tours and curated events.</p>
+      <form id="authForm">
+        <label for="authName">Name</label>
+        <input id="authName" type="text" placeholder="Traveler name" required />
+        <label for="authEmail">Email</label>
+        <input id="authEmail" type="email" placeholder="you@email.com" required />
+        <label for="authPassword">Password</label>
+        <input id="authPassword" type="password" placeholder="•••••••" required />
+        <button type="submit" class="primary-button">Sign In</button>
+      </form>
+      <div class="social-logins">
+        <button class="ghost-button">Continue with Google</button>
+        <button class="ghost-button">Continue with Facebook</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
